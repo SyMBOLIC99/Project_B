@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+<PackageReference Include="MessagePack" Version="2.3.85" />	
+	<ItemGroup>
+    <PackageReference Include="MessagePack" Version="2.3.85" />		
+		</ItemGroup>	
+  <ItemGroup>
+    <PackageReference Include="MessagePack" Version="2.3.85" />
+  </ItemGroup>
+
+</Project>

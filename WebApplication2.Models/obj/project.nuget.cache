@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/6PNmet+vVrDk6gaL58JTexUkezKaLuFPTDOw0UdFbX58Z3jJhPex71psuqaYsIs6KINhouwVid4NqfYU/RgZw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\skidr\\source\\repos\\KursovProekt_Project_B\\WebApplication2.Models\\WebApplication2.Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\skidr\\.nuget\\packages\\messagepack\\2.3.85\\messagepack.2.3.85.nupkg.sha512",
+    "C:\\Users\\skidr\\.nuget\\packages\\messagepack.annotations\\2.3.85\\messagepack.annotations.2.3.85.nupkg.sha512"
+  ],
+  "logs": []
+}
