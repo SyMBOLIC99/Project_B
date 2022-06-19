@@ -1,9 +1,5 @@
-﻿using Confluent.Kafka;
-using MessagePack;
+﻿using MessagePack;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
 using WebApplication2.BLL.Interfaces;
@@ -23,8 +19,6 @@ namespace WebApplication2.BLL.DataFlow
 
             _kafkaproducer = kafkaproducer;
         
-       // var entryBlock = new TransformBlock<byte[], Client>(data => MessagePackSerializer.Deserialize<Client>(data));
-
         var enrichBlock = new TransformBlock<Client, Client>(c =>
         {
             c.Id = RND.Next(0, 50);
