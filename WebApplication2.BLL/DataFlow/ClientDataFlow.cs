@@ -27,7 +27,7 @@ namespace WebApplication2.BLL.DataFlow
 
         var publishBlock = new ActionBlock<Client>(client =>
         {
-            Console.WriteLine($"Updated Id: {client.Id}");
+            Console.WriteLine($"Updated Id Value: {client.Id}");
             _kafkaproducer.SendClientToKafka(client);
 
         });
@@ -44,7 +44,7 @@ namespace WebApplication2.BLL.DataFlow
     public async Task SendClientDataFlow(byte[] data)
     {
         var obj = MessagePackSerializer.Deserialize<Client>(data);
-        Console.WriteLine($"Original Id: {obj.Id}");
+        Console.WriteLine($"Original Id Value: {obj.Id}");
         await entryBlock.SendAsync(data);
     }
 }
